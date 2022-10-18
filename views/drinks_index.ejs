@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,24 @@
     <title>Document</title>
     <style type="text/css">
         body {
-          color: blanchedalmond;
-          background-color: steelblue;
+            color: blanchedalmond;
+            background-color: steelblue;
         }
-      </style>
+    </style>
 </head>
+
 <body>
     <h1>Welcome to gitPub</h1>
+    <ul>
+        <% for(let i=0; i < allDrinks.length; i++){ %>
+            <li>
+                <a href="/drinks/<%= i %>">
+                    <%= allDrinks[i].name %>
+                </a>
+            </li>
+            <% } %>
+    </ul>
 </body>
+
 </html>
+
