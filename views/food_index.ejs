@@ -10,24 +10,22 @@
         body {
             color: blanchedalmond;
             background-color: steelblue;
-            text-transform: capitalize;
         }
     </style>
 </head>
 
 <body>
-            <!-- you can capitalize with CSS above -->
-    <h1>Welcome to gitPub</h1>
-    <ul>
-        <% for(let i=0; i < allDrinks.length; i++){ %>
-            <li>
-                <a href="/drinks/<%= i %>">
-                    <%= allDrinks[i].name %>
-                </a>
-            </li>
-            <% } %>
+<h2>Food Menu</h2>
+    
+<ul>
+<% for(let i = 0; i < allFood.length; i++){ %>
+    <li>
+        <a href="/food/<%= i %>">
+            <%= allFood[i].name %>
+        </a>
+    </li>
     </ul>
+<% } %>
 </body>
 
 </html>
-

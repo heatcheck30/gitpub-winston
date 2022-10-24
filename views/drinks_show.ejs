@@ -7,16 +7,18 @@
             body {
               color: #281D18;
               background-color: #56AC2F;
+              text-transform: capitalize;
             }
           </style>
     </head>
     <body>
         <h1>At Foo Bar</h1>
         <h2> <%= drinks.name %> </h2>
-
-      <img src=
+<!-- you can change the image extension like this -->
+<img src="<%=drinks.image.slice(0,-3)+"png"%>" alt="broken"> 
+      <!-- <img src=
      "<%= drinks.image %>"
-     alt="Broken">
+     alt="Broken"> -->
         <h3> Price: $ <%= drinks.price %> </h3>
 
         <a href="/drinks">Go Back</a><br>
