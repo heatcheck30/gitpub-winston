@@ -7,6 +7,7 @@
             body {
               color: rgb(127, 164, 207);
               background-color: rgb(32, 68, 153);
+              text-transform: capitalize;
             }
           </style>
     </head>
@@ -17,10 +18,11 @@
         <h2>
             <%= food.name %> 
         </h2>
-
-      <img src=
+<!-- you can change the image extension like this -->
+<img src="<%=food.image.slice(0,-3)+"png"%>" alt="broken"> 
+      <!-- <img src=
      "<%= food.image %>"
-     alt=" Broken ">
+     alt=" Broken "> -->
         <h3>
            Price: $ <%= food.price %>
         </h3>
